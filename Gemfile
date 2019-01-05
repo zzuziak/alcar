@@ -10,11 +10,23 @@ gem 'redis'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 5.5.0'
-gem 'sassc-rails'
+gem 'font-awesome-sass', '~> 5.0.9'
+gem 'sass-rails'
 gem 'simple_form'
+gem 'simple_form_extension'
+gem 'simple-form-datepicker'
 gem 'uglifier'
 gem 'webpacker'
+gem 'devise'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+gem "pundit"
+gem "faker"
+gem 'pg_search'
+gem "geocoder"
+gem "coffee-rails"
+
+gem 'jquery-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -28,3 +40,5 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
+
+gem 'redactor-rails', github: 'glyph-fr/redactor-rails'

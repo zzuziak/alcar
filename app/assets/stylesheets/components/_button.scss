@@ -1,0 +1,38 @@
+.btn-offer {
+  position: absolute;
+  width: 520px;
+  height: 60px;
+  left: 1px;
+  top: 557px;
+
+  background-color: #FF0025;
+  color: white;
+  padding: 8px 20px 3px 20px;
+  border-radius: 3px;
+  transition: all 0.4s;
+  p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 30px;
+  }
+  &:hover {
+    // background-color: #0d1026;
+    transform: scale(1.05);
+  }
+}
+
+
+.btn-details {
+  background-color: #101010;
+  color: white;
+  height: 40px;
+  border-radius: 3px;
+  transition: all 0.4s;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  margin-top: 20px;
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    color: white;
+  }
+}

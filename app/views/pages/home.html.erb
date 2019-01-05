@@ -1,2 +1,126 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(135, 135, 135, 0.8) 0%, rgba(135,135,135,0.4) 50%), url('assets/banner.jpg');">
+  <div class="banner-content">
+    <div class="banner-title">
+      <h1>ZAKŁAD SAMOCHODOWY</h1>
+    </div>
+    <div class="container">
+      <div class="btn btn-offer">
+        <p>Sprawdź naszą ofertę</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="kancelaria" class="content-box">
+  <div class="row row-no-padding">
+
+  <div class="col-xs-12 col-md-4 text-center kancelaria-info">
+    <h3>Doradztwo</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+  </div>
+  <div class="col-xs-12 col-md-4 text-center kancelaria-info">
+    <h3>Doświadczenie</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+  </div>
+  <div class="col-xs-12 col-md-4 text-center kancelaria-info">
+    <h3>Pełen zakres usług</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+  </div>
+</div>
+</div>
+
+<div id="oferta" class="offer-box">
+  <div class="offer-header">
+    <h1>ZAKRES USŁUG</h1>
+  </div>
+  <div class="offer-field">
+    <div class="row row-no-padding">
+      <div class="col-xs-12 col-md-6">
+        <div class="offer-description">
+          <h2>Pierwsza usługa</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <%= link_to "Szczegóły", "/oferta.html", class:"btn btn-details" %>
+        </div>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-6">
+        <div class="offer-img-1">
+
+        </div>
+      </div>
+    </div>
+    <div class="row row-no-padding">
+      <div class="hidden-xs hidden-sm col-md-6">
+        <div class="offer-img-2">
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="offer-description">
+          <h2>Druga usługa</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <%= link_to "Szczegóły", "/oferta.html", class:"btn btn-details" %>
+        </div>
+      </div>
+    </div>
+    <div class="row row-no-padding">
+      <div class="col-xs-12 col-md-6">
+        <div class="offer-description">
+          <h2>Trzecia usługa</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <%= link_to "Szczegóły", "/oferta.html", class:"btn btn-details" %>
+        </div>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-6">
+        <div class="offer-img-3">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="kontakt" class="contact-box">
+  <div class="offer-header">
+    <h1>KONTAKT</h1>
+  </div>
+
+  <div class="row row-no-padding">
+    <div class="col-xs-12 col-md-6">
+        <div class="address">
+          <h2>Zakład ALCAR</h2>
+          <br>
+          <div class="address-details">
+            <i class="fas fa-map-marker-alt"></i> <p> ul. Kraszewskiego 31, 20-463 Lublin</p>
+          </div>
+          <br>
+          <div class="address-details">
+            <i class="fas fa-phone"></i><p>81 744 18 52</p>
+          </div>
+        </div>
+      </div>
+    <div class="col-xs-12 col-md-6">
+      <div id="map" style="height: 600px;">xyz</div>
+    </div>
+  </div>
+
+</div>

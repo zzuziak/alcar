@@ -5,6 +5,12 @@
 $body-font: "Open Sans", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family: "Lemon Milk light";
+  src:url(asset_path("LemonMilklight.otf")) format("truetype");
+};
+
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
