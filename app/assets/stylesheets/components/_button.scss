@@ -20,7 +20,40 @@
   }
 }
 
+.btn-back {
+  background-color: #ffffff;
+  color: #2b2b2b;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: ease 0.3s;
+  p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 12px;
+  }
+  &:hover {
+    background-color: #FF0025;
+    text-decoration: none;
+    color: white;
+  }
+}
 
+
+.btn-product-details {
+  background-color: #FF0025;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all 0.4s;
+  p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 30px;
+  }
+  &:hover {
+    background-color: #d50000;
+    text-decoration: none;
+    color: white;
+  }
+}
 .btn-details {
   background-color: #101010;
   color: white;
@@ -35,4 +68,82 @@
     text-decoration: none;
     color: white;
   }
+}
+
+
+// tabs
+
+
+//tabs buttons
+.company-tabs{
+  display: flex;
+  background: #F4F4F4;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #2b2b2b;
+}
+
+.company-tab a {
+  color: #808080;
+}
+
+.company-tabs li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.white-background ul {
+  -webkit-padding-start: 0px !important;
+  text-decoration: none !important;
+}
+
+.company-tab a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.company-tab h3 {
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+.company-tab {
+  background-color: #F4F4F4;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none !important;
+  transition: all 0.4s;
+  // border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  &:hover {
+    background-color: #e4e4e4;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
+.company-tab.active {
+  background: #2b2b2b;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.tab-content {
+  border-bottom: 3px solid #2b2b2b;
+  padding: 10px 20px 40px 20px;
+  text-align: center;
 }
