@@ -19,7 +19,7 @@
     <% @categories.each do |category| %>
     <%= link_to category_path(category) do %>
     <div class="col-xs-12 col-md-4 text-center cat-details">
-      <%= image_tag('wind.svg', class: "cat-icon") %>
+      <%= image_tag(category.icon.url, class: "cat-icon") %>
       <h3><%= category.name %></h3>
       <p><%= category.description %></p>
     </div>
@@ -31,6 +31,18 @@
 <!-- tabs -->
 
 <div class="row row-no-padding text-center company" id="zaklad"><h2>O FIRMIE</h2></div>
+<div class="row row-no-padding text-center about">
+  <div class="col-xs-12 col-sm-6">
+    tutaj jakieś ikonki
+  </div>
+  <div class="col-xs-12 col-sm-6">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+  </div>
+
+</div>
 <ul class="company-tabs" id="jumping" role="tablist">
  <li role="presentation" class="company-tab active"><a href="#raz" data-toggle="tab">
    <h3 class="hidden-xs">Zakład najwyższego zaufania</h3>

@@ -1,11 +1,10 @@
-<div class="category-banner" style="background-image: linear-gradient(-225deg, rgba(135, 135, 135, 0.8) 0%, rgba(135,135,135,0.4) 50%), url('../assets/klima.jpg');">
+<div class="category-banner" style="background-image: linear-gradient(-225deg, rgba(135, 135, 135, 0.8) 0%, rgba(135,135,135,0.4) 50%), url(<%= @category.photo %>);">
   <div class="banner-content">
     <div class="cat-banner-title">
       <h1><%= @category.name %></h1>
     </div>
   </div>
 </div>
-
 <div class="cat-content">
   <%= render 'shared/back_button', link: root_path %>
   <div class="row row-no-padding">

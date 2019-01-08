@@ -6,31 +6,47 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-categories = Category.create!([{
+klima = Category.create!({
   name: "Klimatyzacja",
-  description: "Usługi klimatyzacyjne"
-  },
-  {
+  description: "Usługi klimatyzacyjne",
+  photo: Rails.root.join("app/assets/images/klima.jpg").open,
+  icon: Rails.root.join("app/assets/images/wind.svg").open
+  })
+
+gps = Category.create!({
     name: "GPS",
-    description: "Montaż, wymiana, etc"
-  },
-  {
+    description: "Montaż, wymiana, etc",
+    photo: Rails.root.join("app/assets/images/mapa.jpg").open,
+    icon: Rails.root.join("app/assets/images/map.svg").open
+  })
+
+zabezpieczenia = Category.create!({
     name: "Zabezpieczenia",
-    description: "Autoalarmy - Montaż, wymiana, etc"
-  },
-  {
+    description: "Autoalarmy - Montaż, wymiana, etc",
+    photo: Rails.root.join("app/assets/images/klucze.jpg").open,
+    icon: Rails.root.join("app/assets/images/taxi.svg").open
+  })
+
+em = Category.create!({
     name: "Elektromechanika",
-    description: "Coś się zepsuło? Naprawimy!"
-  },
-  {
+    description: "Coś się zepsuło? Naprawimy!",
+    photo: Rails.root.join("app/assets/images/mechanik.jpg").open,
+    icon: Rails.root.join("app/assets/images/tool.svg").open
+  })
+
+opony = Category.create!({
     name: "Wymiana opon",
-    description: "Polecana w szczególności w okresie wiosennym i przed zimą.."
-  },
-  {
+    description: "Polecana w szczególności w okresie wiosennym i przed zimą..",
+    photo: Rails.root.join("app/assets/images/kolo.jpg").open,
+    icon: Rails.root.join("app/assets/images/gear.svg").open
+  })
+
+akcesoria = Category.create!({
     name: "Akcesoria",
-    description: "Czego dusza zapragnie. Od baterii po wycieraczki."
-  },
-    ])
+    description: "Czego dusza zapragnie. Od baterii po wycieraczki.",
+    photo: Rails.root.join("app/assets/images/uchwyt.jpg").open,
+    icon: Rails.root.join("app/assets/images/open-box.svg").open
+  })
 
 products = Product.create!([{
   name: "Instalacja",
