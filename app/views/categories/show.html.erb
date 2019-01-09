@@ -6,7 +6,10 @@
   </div>
 </div>
 <div class="cat-content">
-  <%= render 'shared/back_button', link: root_path %>
+  <div class="row row-no-padding">
+    <%= render 'shared/back_button', link: root_path %>
+    <%= render 'shared/edit_button', link: edit_category_path(@category) %>
+  </div>
   <div class="row row-no-padding">
     <div class="col-xs-12 col-sm-4 cat-description"><p><%= @category.description %></p></div>
     <div class="col-xs-12 col-sm-7 cat-products">

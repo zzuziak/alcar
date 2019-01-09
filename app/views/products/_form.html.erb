@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <%= simple_form_for (product, category) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :category, value: category %>
+    <%= f.input :short_description %>
+    <%= f.input :long_description %>
+        <div class="button-center">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

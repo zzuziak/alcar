@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <h3>Edytuj kategorię</h3>
+    <%= simple_form_for @category, url: {action: "update"} do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+        <div class="button-center">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
