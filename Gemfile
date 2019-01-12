@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '2.4.4'
 
 gem 'bootsnap', require: false
@@ -25,6 +25,8 @@ gem "faker"
 gem 'pg_search'
 gem "geocoder"
 gem "coffee-rails"
+gem "cookies_eu"
+gem "geocoder"
 
 gem 'jquery-rails'
 

@@ -9,20 +9,44 @@
   <div class="row row-no-padding">
     <%= render 'shared/back_button', link: root_path %>
     <%= render 'shared/edit_button', link: edit_category_path(@category) %>
+    <%= render 'shared/new_product_button', link: new_category_product_path(@category) %>
   </div>
   <div class="row row-no-padding">
-    <div class="col-xs-12 col-sm-4 cat-description"><p><%= @category.description %></p></div>
-    <div class="col-xs-12 col-sm-7 cat-products">
+
+  </div>
+</div>
+
+
+<!-- tabs -->
+
+<div class="row row-no-padding">
+  <div class="col-xs-12 col-sm-4">
+    <ul class="products-tabs" id="jumping" role="tablist">
+      <li role="presentation" class="product-tab active"><a href="#category" data-toggle="tab">
+        <h5>Opis usług</h5>
+      </a></li>
       <% @category.products.each do |product| %>
-        <div class="cat-product">
-          <div class="cat-product-details">
-            <h3><%= product.name %></h3>
-            <p class="cat-product-price">ceny od xxx pln</p>
-          </div>
-          <div class="cat-product-link">
-            <%= link_to 'Szczegóły', category_product_path(product), class: "btn-product-details" %>
-          </div>
+      <li role="presentation" class="product-tab"><a href="#<%= product.id %>" data-toggle="tab">
+        <h5><%= product.name %></h5>
+      </a></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-8">
+    <div class="tab-content product-tab-content">
+      <div class="tab-pane active" id="category" role="tabpanel">
+        <div class="cat-description">
+          <p><%= simple_format(@category.description) %></p>
         </div>
+      </div>
+      <% @category.products.each do |product| %>
+      <div class="tab-pane" id="<%= product.id %>" role="tabpanel">
+        <div class="cat-description">
+          <p><%= simple_format(product.description) %></p>
+          <br><br>
+          <%= link_to "EDYTUJ", edit_category_product_path(@category, product), class:"btn-product-details" %>
+        </div>
+      </div>
       <% end %>
     </div>
   </div>

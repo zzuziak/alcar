@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <%= simple_form_for [category, product] do |f| %>
-    <%= f.input :name, label: "Nazwa" %>
-    <%= f.input :description, label: "Opis" %>
+    <%= simple_form_for [category, product, option] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :price %>
         <div class="button-center">
         <%= f.submit %>
       </div>

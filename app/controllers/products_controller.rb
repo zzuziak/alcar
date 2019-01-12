@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update]
+  before_action :set_category, only: [:index, :new, :create, :edit, :update]
+
   def index
-    @category = Category.find(params[:category_id])
   end
 
   def show
@@ -13,10 +14,11 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @user = current_user
+    # @user = current_user
     @product = Product.new(product_params)
-    if @product.save
-      redirect_to root_path
+    @product.category = @category
+    if @product.save!
+      redirect_to category_path(@category)
     else
       render :new
     end
@@ -27,7 +29,7 @@ class ProductsController < ApplicationController
 
   def update
     if @product.update(product_params)
-      redirect_to category_product_path(@product)
+      redirect_to category_path(@category)
     else
       render :edit
     end
@@ -40,6 +42,11 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :short_description, :long_description)
+    params.require(:product).permit(:name, :description)
+  end
+
+
+  def set_category
+    @category = Category.find(params[:category_id])
   end
 end

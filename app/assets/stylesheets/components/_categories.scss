@@ -65,9 +65,12 @@
 
 .cat-description {
   padding: 20px;
-  margin: 10px;
   background-color: #fff;
   color: #2b2b2b;
+  text-align: left;
+  p {
+    padding: 0 !important;
+  }
 }
 
 .cat-products {

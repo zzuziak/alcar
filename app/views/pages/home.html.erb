@@ -16,100 +16,151 @@
 
 <div id="oferta" class="content-box">
   <div class="row row-no-padding">
+    <br>
     <% @categories.each do |category| %>
     <%= link_to category_path(category) do %>
     <div class="col-xs-12 col-md-4 text-center cat-details">
       <%= image_tag(category.icon.url, class: "cat-icon") %>
       <h3><%= category.name %></h3>
-      <p><%= category.description %></p>
     </div>
     <% end %>
     <% end %>
   </div>
+  <div class="spacer"></div>
 </div>
 
 <!-- tabs -->
 
-<div class="row row-no-padding text-center company" id="zaklad"><h2>O FIRMIE</h2></div>
+<!-- <div class="row row-no-padding text-center company" id="zaklad"><h2>O FIRMIE</h2></div> -->
 <div class="row row-no-padding text-center about">
-  <div class="col-xs-12 col-sm-6">
-    tutaj jakieś ikonki
+  <div class="col-xs-12 col-sm-6 info-highlight">
+    <h1>DZIAŁAMY </h1>
+    <h1>OD <span style="color: #FF0025; font-size: 92px;">1986</span></h1>
   </div>
-  <div class="col-xs-12 col-sm-6">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.</p>
-  </div>
-
-</div>
-<ul class="company-tabs" id="jumping" role="tablist">
- <li role="presentation" class="company-tab active"><a href="#raz" data-toggle="tab">
-   <h3 class="hidden-xs">Zakład najwyższego zaufania</h3>
-   <h6 class="hidden-sm hidden-md hidden-lg">Zaufanie</h6>
- </a></li>
- <li role="presentation" class="company-tab"><a  href="#dwa" data-toggle="tab">
-   <h3 class="hidden-xs">Wykwalifikowana kadra</h3>
-   <h6 class="hidden-sm hidden-md hidden-lg">Kadra</h6>
- </a></li>
- <li role="presentation" class="company-tab"><a  href="#trzy" data-toggle="tab">
-   <h3 class="hidden-xs">Zaopatrzenie</h3>
-   <h6 class="hidden-sm hidden-md hidden-lg">Zaopatrzenie</h6>
- </a></li>
-</ul>
-
-<div class="tab-content">
-  <div class="tab-pane active" id="raz" role="tabpanel">
-    <div class="row row-no-padding">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-        <h3>Główna myśl</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-      </div>
+  <div class="col-xs-12 col-sm-5 company-description">
+    <h4>ALCAR już od <strong>ponad 30 lat</strong> działa na rynku zabezpieczeń pojazdów.</h4>
+    <br>
+    <p>W wyniku rozwoju rynku i potrzeb klientów działalność była konsekwentnie
+      rozszerzana o usługi z zakresu <strong>elektromechaniki</strong>, <strong>obsługi serwisowej</strong> pojazdu
+      (oleje, filtry , klocki hamulcowe itp ), <strong>klimatyzacji</strong>, <strong>wymiany opon</strong> i obsługi
+      <strong>systemów GPS</strong>.
+      <br><br>
+      O jakości usług świadczyć może ilość zadowolonych klientów,
+      którzy zwracają się do nas z problemami o różnym podłożu. Współpracujemy
+      zarówno z klientami indywidualnymi, jak i przedsiębiorstwami.</p>
     </div>
-  </div>
-  <div class="tab-pane" id="dwa" role="tabpanel">
-    Kadra
-  </div>
-  <div class="tab-pane" id="trzy" role="tabpanel">
-    Zaopatrzenie
-  </div>
-</div>
 
-<div id="kontakt" class="contact-box">
-  <div class="row row-no-padding text-center contact"><h2>KONTAKT</h2></div>
+  </div>
+  <ul class="company-tabs" id="jumping" role="tablist">
+    <li role="presentation" class="company-tab active"><a href="#raz" data-toggle="tab">
+      <h3 class="hidden-xs">Zakład najwyższego zaufania</h3>
+      <h6 class="hidden-sm hidden-md hidden-lg">Zaufanie</h6>
+    </a></li>
+    <li role="presentation" class="company-tab"><a  href="#dwa" data-toggle="tab">
+      <h3 class="hidden-xs">Profesjonalizm</h3>
+      <h6 class="hidden-sm hidden-md hidden-lg">Profesjonalizm</h6>
+    </a></li>
+    <li role="presentation" class="company-tab"><a  href="#trzy" data-toggle="tab">
+      <h3 class="hidden-xs">USŁUGI</h3>
+      <h6 class="hidden-sm hidden-md hidden-lg">USŁUGI</h6>
+    </a></li>
+  </ul>
 
-
-  <div class="row row-no-padding">
-    <div class="col-xs-12 col-md-6 address-box">
-        <div class="address">
-          <h2>Zakład ALCAR</h2>
-          <br>
-          <div class="address-details">
-            <i class="fas fa-map-marker-alt"></i> <p> ul. Kraszewskiego 31, 20-463 Lublin</p>
-          </div>
-          <br>
-          <div class="address-details">
-            <i class="fas fa-phone"></i><p>81 744 18 52</p>
-          </div>
-          <div class="opening-hours">
-            <h3 class="opening-hours-title">Godziny otwarcia</h3>
-            <div>
-              <% @hours.each do |hour| %>
-              <div class="day">
-              <h5><strong><%= hour.day %></strong></h5>
-              <p><%= hour.hours %></p>
-              </div>
-              <% end %>
-            </div>
+  <div class="tab-content">
+    <div class="tab-pane tab-pane-padding active" id="raz" role="tabpanel">
+      <div class="row row-no-padding">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left company-details">
+          <h3>Tytuł Zakładu Najwyższego Zaufania</h3>
+          <p>nadany przez TECHOM Nr 70/97  oraz
+            autoryzowany przez Przemysłowy Instytut Motoryzacji (Nr 15/BLE/18/ZK/98)
+            jako:
+            <br><br>
+            <strong>ZAKŁAD KONTROLI ZABEZPIECZEŃ PRZECIWKRADZIEŻOWYCH</strong>
+            <br><br>
+            Jako Zakład Kontroli Zabezpieczeń Przeciwkradzieżowych wykonujemy dla potrzeb
+            firm ubezpieczeniowych oraz osób fizycznych oceny skuteczności zabezpieczeń z
+            określeniem ich klasy. </p>
           </div>
         </div>
       </div>
-    <div class="col-xs-12 col-md-6 map-box">
-      <div id="map" style="height: 600px;">xyz</div>
-    </div>
-  </div>
+      <div class="tab-pane tab-pane-padding" id="dwa" role="tabpanel">
+        <div class="row row-no-padding">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left company-details">
+            <p>
+              Posiadane uprawnienia i wiadomości pozwalają firmie na prowadzenie
+              profesjonalnych usług w zakresie doboru i montażu zabezpieczeń dla pojazdów
+              specjalistycznych min. tj. bankowozów..
+            </p>
+            <p>
+              W celu świadczenia usług używamy sprzętu
+              najwyższej klasy gwarantującego wysoką i trwałą jakość.
+            </p>
+            <p>
+              Kadra pracownicza
+              posiada licencje pracowników zabezpieczenia technicznego wydane przez Komendę
+              Wojewódzką Policji.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane tab-pane-padding" id="trzy" role="tabpanel">
+        <div class="row row-no-padding">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left company-details">
+            <p>Zakład oferuje szeroki zakres usług obejmujący zabezpieczenia, montaż,
+              naprawę i konserwację klimatyzacji, wymianę opon, montaż GPS,  naprawy z
+              zakresu elektromechaniki pojazdowej.
+            </p>
+            <p>Prowadzimy zaopatrzenie serwisów
+              samochodowych oraz instalatorów indywidualnych w sprzęt i akcesoria
+              zabezpieczające.</p>
+              <p>Oferujemy sprzęt radiowy CB z montażem. Wykonujemy
+                diagnostykę komputerową układów elektrycznych pojazdów, sterowników silnika,
+                układów ABS, układów poduszek powietrznych itp.</p>
+                <br>
+                <p>Więcej informacji znaleźć można w ofercie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-</div>
+        <div id="kontakt" class="contact-box">
+          <div class="row row-no-padding text-center contact"><h2>KONTAKT</h2></div>
+
+
+          <div class="row row-no-padding">
+            <div class="col-xs-12 col-md-6 address-box">
+              <div class="address">
+                <h2>Zakład ALCAR</h2>
+                <br>
+                <div class="address-details">
+                  <i class="fas fa-map-marker-alt"></i> <p> ul. Kraszewskiego 31, 20-463 Lublin</p>
+                </div>
+                <br>
+                <div class="address-details">
+                  <i class="fas fa-phone"></i><p>81 744 18 52</p>
+                </div>
+                <div class="opening-hours">
+                  <h3 class="opening-hours-title">Godziny otwarcia</h3>
+                  <div>
+                    <% @hours.each do |hour| %>
+                    <div class="day">
+                      <h5><strong><%= hour.day %></strong></h5>
+                      <p><%= hour.hours %></p>
+                    </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div
+              id="map"
+              style="width: 100%;
+              height: 600px;"
+              data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+              data-markers="{lng: 22.576943, lat: 51.220261}"
+              ></div>
+            </div>
+          </div>
+
+        </div>

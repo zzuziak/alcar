@@ -90,6 +90,9 @@
   color: #808080;
 }
 
+.tab-pane-padding {
+  padding: 50px 0;
+}
 .company-tabs li {
   list-style-type: none;
   text-decoration: none;
@@ -146,4 +149,59 @@
   border-bottom: 3px solid #2b2b2b;
   padding: 10px 20px 40px 20px;
   text-align: center;
+}
+
+// tabs for products
+.products-tabs {
+  display: flex;
+  flex-direction: column;
+  background: #F4F4F4;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0px 10px;
+}
+
+.product-tab-content {
+  text-align: center;
+  background-color: #fff;
+  color: #2b2b2b;
+  border-bottom: none !important;
+  margin-top: 5px;
+  padding: 0 !important;
+}
+
+
+.product-tab {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px;
+  text-decoration: none !important;
+  transition: all 0.4s;
+  // border-top: 2px solid white;
+  &:hover {
+    background-color: #e4e4e4;
+  }
+  a {
+    text-decoration: none;
+    color: #2b2b2b;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
+.product-tab.active {
+  background: #2b2b2b;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
