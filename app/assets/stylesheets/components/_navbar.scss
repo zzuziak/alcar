@@ -1,5 +1,5 @@
 /* Main navbar */
-.navbar-wagon {
+.navbar-alcar {
   transition: all 0.3s ease;
   height: 90px;
   padding: 0px 30px;
@@ -9,14 +9,17 @@
   background-color: transparent
 }
 
-.navbar-wagon-white {
+.navbar-alcar-white {
   opacity: 0;
 }
 /* Logo */
-.navbar-wagon-brand img {
-  height: 80px;
+.navbar-brand {
+  padding: 0;
 }
 
+.nav-transparent {
+  display: none;
+}
 // fixed margin for fixed navbar
 
 .margin-nav {
@@ -29,28 +32,28 @@
 }
 
 /* User Avatar */
-.navbar-wagon .avatar {
+.navbar-alcar .avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
 }
 
 /* Right section */
-.navbar-wagon-right {
+.navbar-alcar-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Basic navbar item */
-.navbar-wagon-item {
+.navbar-alcar-item {
   cursor: pointer;
   padding: 0 20px;
 }
 
 /* Navbar link */
 
-.navbar-wagon-link {
+.navbar-alcar-link {
   color: #fff;
   letter-spacing: 1px;
   font-size: 16px;
@@ -61,34 +64,15 @@
   }
 }
 
-.navbar-wagon-link-home {
-  letter-spacing: 1px;
-  color: white;
-  font-size: 16px;
-  font-family: 'Lemon Milk light';
-  &:hover {
-    color: $orange;
-    text-decoration: none;
-  }
-}
 
-.navbar-all-events-link {
-   border: 1px solid white;
-   padding: 3px 15px !important;
-}
-
-.navbar-all-events-link:hover {
-    border-color: $orange;
-    text-decoration: none;
-}
 
 /* Dropdown menu */
-.navbar-wagon-dropdown-menu {
+.navbar-alcar-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
 }
-.navbar-wagon-dropdown-menu li > a {
+.navbar-alcar-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
   color: #999999 !important;
@@ -96,11 +80,11 @@
   line-height: 22px !important;
   padding: 10px 20px;
 }
-.navbar-wagon-dropdown-menu li > a:hover {
+.navbar-alcar-dropdown-menu li > a:hover {
   background: transparent !important;
   color: black !important;
 }
-.navbar-wagon-dropdown-menu:before {
+.navbar-alcar-dropdown-menu:before {
   content: ' ';
   height: 10px;
   width: 10px;
@@ -111,4 +95,9 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.fa-bars {
+  font-size: 35px;
+  color: white;
 }

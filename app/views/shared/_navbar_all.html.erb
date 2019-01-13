@@ -1,21 +1,30 @@
-<div class="navbar-wagon navbar-fixed-top">
+<div class="navbar-alcar navbar-fixed-top">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
   <%= image_tag('Alcar-logo.svg', width: "100px") %>
   <% end %>
 
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-
+  <div class="navbar-alcar-right hidden-xs hidden-sm">
       <!-- Links when logged in -->
-      <a href="<%= root_path %>#oferta" class="navbar-wagon-item navbar-wagon-link">OFERTA</a>
-      <a href="<%= root_path %>#zaklad" class="navbar-wagon-item navbar-wagon-link">ZAKŁAD</a>
-      <a href="<%= root_path %>#kontakt" class="navbar-wagon-item navbar-wagon-link">KONTAKT</a>
+      <a href="<%= root_path %>#oferta" class="navbar-alcar-item navbar-alcar-link">OFERTA</a>
+      <a href="<%= root_path %>#zaklad" class="navbar-alcar-item navbar-alcar-link">ZAKŁAD</a>
+      <a href="<%= root_path %>#kontakt" class="navbar-alcar-item navbar-alcar-link">KONTAKT</a>
       <!-- Avatar with dropdown menu -->
 
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-alcar-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-alcar-dropdown-menu">
+        <li><a href="<%= root_path %>#oferta" class="navbar-alcar-item navbar-alcar-link">OFERTA</a></li>
+        <li><a href="<%= root_path %>#zaklad" class="navbar-alcar-item navbar-alcar-link">ZAKŁAD</a></li>
+        <li><a href="<%= root_path %>#kontakt" class="navbar-alcar-item navbar-alcar-link">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+
 
 </div>

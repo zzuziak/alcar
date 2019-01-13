@@ -1,6 +1,8 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<div class="row row-no-padding" style="margin-top: 120px;" >
+  <%= render 'shared/back_button', link: category_path(@category) %>
+  <div class="col-xs-12 col-sm-5">
     <h3>Edytuj usługę</h3>
+    <br>
   </div>
 </div>
 <%= render 'form', product: @product, category: @category %>

@@ -1,12 +1,13 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<div class="row row-no-padding" style="margin-top: 120px;" >
+  <%= render 'shared/back_button', link: category_path(@category) %>
+  <div class="col-xs-12 col-sm-6">
     <h3>Edytuj kategorię</h3>
     <%= simple_form_for @category, url: {action: "update"} do |f| %>
     <%= f.input :name %>
-    <%= f.input :description %>
-        <div class="button-center">
-        <%= f.submit %>
-      </div>
+    <%= f.input :description, label: "Opis kategorii", input_html: { rows: 10 } %>
+    <div class="button-center">
+      <%= f.submit %>
+    </div>
     <% end %>
   </div>
 </div>
