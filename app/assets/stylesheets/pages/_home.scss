@@ -24,9 +24,9 @@
 .about {
   padding: 30px 10px 50px 10px;
   background-color: #fff;
-  height: 60vh;
-  display: flex;
-  align-items: center;
+  min-height: 60vh;
+  // display: flex;
+  // align-items: center;
   // border-top: 1px solid #2b2b2b;
 }
 
@@ -102,3 +102,9 @@ ul {
     padding: 5px 0;
   }
   }
+
+@media(max-width: 720px) {
+  .company-description {
+    border-left: none;
+  }
+}

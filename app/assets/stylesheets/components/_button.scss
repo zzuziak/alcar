@@ -1,10 +1,6 @@
 .btn-offer {
-  position: absolute;
   width: 520px;
   height: 60px;
-  left: 1px;
-  top: 557px;
-
   background-color: #FF0025;
   color: white;
   padding: 8px 20px 3px 20px;
@@ -37,7 +33,15 @@
   }
 }
 
+.btn-navigate {
+  width: 150px;
+  padding: 10px 20px;
+  margin: 0 30px;
+}
 
+.btn-new {
+  width: 230px;
+}
 .btn-product-details {
   background-color: #FF0025;
   color: white;
@@ -203,5 +207,95 @@
   }
   a:hover {
     text-decoration: none;
+  }
+}
+
+
+@media(max-width: 720px) {
+  .btn-offer {
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-family: "Montserrat", "sans-serif";
+      font-size: 20px;
+      margin: 0 !important;
+      padding-bottom: 8px;
+    }
+    &:hover {
+      // background-color: #0d1026;
+      transform: scale(1.05);
+    }
+  }
+
+  .btn-back {
+    background-color: #ffffff;
+    color: #2b2b2b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: ease 0.3s;
+    p {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 12px;
+    }
+    &:hover {
+      background-color: #FF0025;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+
+  .btn-product-details {
+    background-color: #FF0025;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all 0.4s;
+    p {
+    font-family: "Montserrat", "sans-serif";
+    font-size: 30px;
+    }
+    &:hover {
+      background-color: #d50000;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .btn-details {
+    background-color: #101010;
+    color: white;
+    height: 40px;
+    border-radius: 3px;
+    transition: all 0.4s;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+    margin-top: 20px;
+    &:hover {
+      transform: scale(1.05);
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .btn-navigate {
+    width: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-new {
+    width: 50px;
+  }
+
+  .btn-back {
+    background-color: #ffffff;
+    color: #2b2b2b;
+    padding: 5px;
+    border-radius: 3px;
+    transition: ease 0.3s;
   }
 }

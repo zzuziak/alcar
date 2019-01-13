@@ -11,6 +11,23 @@ $headers-font: "Lemon Milk light", "Helvetica", "sans-serif";
 };
 
 
+@media(max-width: 720px) {
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+}
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

@@ -91,3 +91,27 @@
 .cat-product-price {
   margin-left: 15px;
 }
+
+@media(max-width: 720px) {
+  .cat-icon {
+    max-width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .cat-details {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  #oferta {
+    margin: 10px;
+  }
+
+  .cat-banner-title {
+    width: 320px;
+    height: 50px;
+    padding: 8px 20px 3px 20px;
+  }
+}
