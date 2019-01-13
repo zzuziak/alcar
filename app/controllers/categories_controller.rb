@@ -8,9 +8,11 @@ class CategoriesController < ApplicationController
   end
 
   def edit
+    # authorize @category
   end
 
   def update
+    # authorize @category
     if @category.update(category_params)
       redirect_to category_path(@category)
     else
