@@ -1,7 +1,7 @@
 
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(135, 135, 135, 0.8) 0%, rgba(135,135,135,0.4) 50%), url(<%= image_path 'banner.jpg' %>);">
   <div class="banner-content">
-    <h1 class="banner-title">ZAKŁAD SAMOCHODOWY</h1>
+    <h1 class="banner-title">SERWIS SAMOCHODOWY</h1>
       <%= link_to '#oferta', class: "btn btn-offer link-no-deco" do %>
       <p>Sprawdź naszą ofertę</p>
       <% end %>
@@ -65,12 +65,12 @@
       <div class="row row-no-padding">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left company-details">
           <h3>Tytuł Zakładu Najwyższego Zaufania</h3>
-          <p>nadany przez TECHOM Nr 70/97  oraz
-            autoryzowany przez Przemysłowy Instytut Motoryzacji (Nr 15/BLE/18/ZK/98)
-            jako:
+          <p>nadany przez TECHOM Nr 70/97.
             <br><br>
-            <strong>ZAKŁAD KONTROLI ZABEZPIECZEŃ PRZECIWKRADZIEŻOWYCH</strong>
+          <h3>Autoryzacja</h3>
+            przez Przemysłowy Instytut Motoryzacji (Nr 15/BLE/18/ZK/98).
             <br><br>
+
             Jako Zakład Kontroli Zabezpieczeń Przeciwkradzieżowych wykonujemy dla potrzeb
             firm ubezpieczeniowych oraz osób fizycznych oceny skuteczności zabezpieczeń z
             określeniem ich klasy. </p>
@@ -124,18 +124,22 @@
           <div class="row row-no-padding">
             <div class="col-xs-12 col-md-6 address-box">
               <div class="address">
-                <h2>Zakład ALCAR</h2>
+                <h2>ALCAR Lech Żuber</h2>
                 <br>
                 <div class="address-details">
-                  <i class="fas fa-map-marker-alt"></i> <p> ul. Kraszewskiego 31, 20-463 Lublin</p>
+                  <i class="fas fa-map-marker-alt"></i> <p> ul. Kraszewskiego 31, 20-463 Lublin <br> NIP: 7120306343</p>
                 </div>
                 <br>
                 <div class="address-details">
                   <i class="fas fa-phone"></i><p>81 744 18 52</p>
                 </div>
+                <br>
+                <div class="address-details">
+                  <i class="fa fa-at"></i><p>alcar@alcar.lublin.pl</p>
+                </div>
                 <div class="opening-hours">
                   <h3 class="opening-hours-title">Godziny otwarcia</h3>
-                  <div>
+                  <div style="background-color: #f4f4f4;">
                     <% @hours.each do |hour| %>
                     <div class="day">
                       <h5><strong><%= hour.day %></strong>
