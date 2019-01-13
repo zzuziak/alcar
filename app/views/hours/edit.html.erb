@@ -1,0 +1,14 @@
+<div class="row row-no-padding" style="margin-top: 120px;" >
+  <%= render 'shared/back_button', link: root_path %>
+  <div class="col-xs-12 col-sm-6">
+    <h3>Edytuj godziny otwarcia</h3>
+    <%= simple_form_for @hour, url: {action: "update"} do |f| %>
+    <p><%= @hour.day %> (format: hh.mm - hh.mm lub "Nieczynne")</p>
+    <br>
+    <%= f.input :hours, label: "ustaw" %>
+    <div class="button-center">
+      <%= f.submit %>
+    </div>
+    <% end %>
+  </div>
+</div>

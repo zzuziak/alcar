@@ -1,8 +1,18 @@
 .cookies-eu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #2b2b2b;
   color: white;
 }             /* main div */
-.cookies-eu-content-holder  /* content holder */
-.cookies-eu-button-holder   /* button holder */
-.cookies-eu-ok              /* button */
-.cookies-eu-link
+.cookies-eu-content-holder  {
+  display: flex;
+  align-items: center;
+} /* content holder */
+.cookies-eu-button-holder {}   /* button holder */
+.cookies-eu-ok {
+  height: 30px;
+  border-radius: 3px;
+  background-color: #ff0025;
+}        /* button */
+.cookies-eu-link {}

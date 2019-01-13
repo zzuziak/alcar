@@ -17,4 +17,5 @@ Rails.application.routes.draw do
       resources :options
     end
   end
+  resources :hours, only: [:edit, :update]
 end

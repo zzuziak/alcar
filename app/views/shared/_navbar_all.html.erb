@@ -11,7 +11,16 @@
       <a href="<%= root_path %>#zaklad" class="navbar-alcar-item navbar-alcar-link">ZAKŁAD</a>
       <a href="<%= root_path %>#kontakt" class="navbar-alcar-item navbar-alcar-link">KONTAKT</a>
       <!-- Avatar with dropdown menu -->
-
+    <% if user_signed_in? && current_user.admin? %>
+    <div class="dropdown">
+      <div class="navbar-alcar-item navbar-alcar-link btn-product-details" data-toggle="dropdown" role="button">ADMIN</div>
+      <% elsif user_signed_in? %>
+      <div class="navbar-alcar-item navbar-alcar-link btn-product-details" data-toggle="dropdown" role="button">USER</div>
+      <% end %>
+      <ul class="dropdown-menu dropdown-menu-right navbar-alcar-dropdown-menu">
+        <li><%= link_to "WYLOGUJ", destroy_user_session_path, method: :delete, class:"navbar-alcar-item navbar-alcar-link" %></li>
+      </ul>
+    </div>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

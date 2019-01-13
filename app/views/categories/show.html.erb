@@ -8,8 +8,10 @@
 <div class="cat-content">
   <div class="row row-no-padding">
     <%= render 'shared/back_button', link: root_path %>
+    <% if user_signed_in? && current_user.admin? %>
     <%= render 'shared/edit_button', link: edit_category_path(@category) %>
     <%= render 'shared/new_product_button', link: new_category_product_path(@category) %>
+    <% end %>
   </div>
   <div class="row row-no-padding">
 
@@ -44,7 +46,9 @@
         <div class="cat-description">
           <p><%= simple_format(product.description) %></p>
           <br><br>
+          <% if user_signed_in? && current_user.admin? %>
           <%= link_to "EDYTUJ", edit_category_product_path(@category, product), class:"btn-product-details" %>
+          <% end %>
         </div>
       </div>
       <% end %>
