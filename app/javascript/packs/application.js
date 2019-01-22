@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'; // <-- you need to uncomment the styleshe
 import { cookies } from '../components/cookies';
 cookies();
 
-import { initMapbox } from '../plugins/init_mapbox';
+import { initMapbox } from '../plugins/init_mapbox.js.erb';
 initMapbox();
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
