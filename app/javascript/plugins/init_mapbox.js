@@ -13,7 +13,7 @@ const initMapbox = () => {
     });
     const element = document.createElement('div');
     element.className = 'marker';
-    element.style.backgroundImage = 'url("./assets/marker.png")';
+    element.style.backgroundImage = 'url("./assets/images/marker.png")';
     element.style.backgroundSize = 'cover';
     element.style.width = '35px';
     element.style.height = '35px';
