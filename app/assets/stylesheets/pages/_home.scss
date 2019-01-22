@@ -113,3 +113,14 @@ ul {
     display: block;
   }
 }
+
+@media(max-width: 425px){
+.company-details {
+  background-color: white;
+  border-radius: 3px;
+  padding: 20px;
+  h3 {
+    font-size: 20px;
+  }
+}
+}

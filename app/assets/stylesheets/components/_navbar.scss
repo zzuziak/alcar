@@ -102,3 +102,13 @@
   font-size: 35px;
   color: white;
 }
+
+@media(max-width: 425px) {
+  .fa-bars {
+    font-size: 25px;
+  }
+
+  .navbar-alcar-item {
+    padding: 0;
+  }
+}

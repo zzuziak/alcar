@@ -11,11 +11,11 @@ Rails.application.routes.draw do
     sign_up: 'cmon_let_me_in' }
 
   root to: 'pages#home'
+  get 'cookies', to: 'pages#cookies'
 
   resources :categories, only: [:show, :new, :create, :edit, :update, :destroy] do
-    resources :products do
-      resources :options
-    end
+    resources :products
   end
+
   resources :hours, only: [:edit, :update]
 end

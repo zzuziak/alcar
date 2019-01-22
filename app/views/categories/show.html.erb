@@ -48,6 +48,8 @@
           <br><br>
           <% if user_signed_in? && current_user.admin? %>
           <%= link_to "EDYTUJ", edit_category_product_path(@category, product), class:"btn-product-details" %>
+          <%= link_to "USUŃ", category_product_path(@category, product), method: :delete, data: {confirm: "Na pewno?"}, class:"btn-product-details" %>
+
           <% end %>
         </div>
       </div>

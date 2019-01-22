@@ -3,10 +3,9 @@ class CategoryPolicy < ApplicationPolicy
   def show?
     true
   end
-
+  
   def create?
-    user.admin?
-    scope.all
+    true
   end
 
   def update?

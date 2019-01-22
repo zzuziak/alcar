@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "message": "W ramach naszej strony stosujemy pliki cookies w celu świadczenia usług na najwyższym poziomie, dzięki czemu dostosowuje się ona do Państwa indywidualnych potrzeb. Korzystanie z witryny bez zmiany ustawień cookies oznacza, że będą one zamieszczane w Państwa urządzeniu końcowym. ",
+    "dismiss": "Rozumiem!",
+    "link": "<%= link_to "Szczegóły", cookies_path %>"
+  }
+})});
+</script>
