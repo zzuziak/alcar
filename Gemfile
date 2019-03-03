@@ -23,10 +23,10 @@ gem 'carrierwave', '~> 1.2'
 gem "pundit"
 gem "faker"
 gem 'pg_search'
-gem "geocoder"
 gem "coffee-rails"
 gem "cookies_eu"
 gem "geocoder"
+gem 'newrelic_rpm'
 
 gem 'jquery-rails'
 
