@@ -1,9 +1,11 @@
 class HoursController < ApplicationController
   before_action :set_hour, only: [:edit, :update]
   def edit
+    authorize @hour
   end
 
   def update
+    authorize @hour
     if @hour.update(hour_params)
       redirect_to root_path
     else
