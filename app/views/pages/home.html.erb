@@ -1,10 +1,22 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(135, 135, 135, 0.8) 0%, rgba(135,135,135,0.4) 50%), url(<%= image_path 'banner.jpg' %>);">
-  <div class="banner-content">
-    <h1 class="banner-title">SERWIS SAMOCHODOWY</h1>
-      <%= link_to '#oferta', class: "btn btn-offer link-no-deco" do %>
-      <p>Sprawdź naszą ofertę</p>
-      <% end %>
-  </div>
+    <div class="banner-content">
+      <h1 class="banner-title">SERWIS SAMOCHODOWY</h1>
+        <%= link_to '#oferta', class: "btn btn-offer link-no-deco" do %>
+        <p class='oferta'>Sprawdź naszą ofertę</p>
+        <% end %>
+    </div>
+    <div class='eu-content'>
+      <p class='eu-note'>Przedmiot projektu: wsparcie utrzymania działalności gospodarczej przedsiębiorstwa,
+        które znalazło się w trudnej sytuacji nagłego niedoboru w związku z wystąpieniem
+        pandemii COVID-19.
+      </p>
+      <div>
+        <%= image_tag('eu.png', height:60)%>
+        <%= image_tag('fe.png', height:60)%>
+        <%= image_tag('pl.png', height:60)%>
+        <%= image_tag('lb.png', height:40)%>
+      </div>
+    </div>
 </div>
 
 <div id="oferta" class="content-box">
