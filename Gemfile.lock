@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/glyph-fr/redactor-rails.git
+  remote: https://github.com/glyph-fr/redactor-rails.git
   revision: 6f6655fd71199700f2e5d7bc1f7f3c19f37dde50
   specs:
     redactor-rails (0.6.0)
@@ -141,7 +141,7 @@ GEM
     multi_json (1.13.1)
     netrc (0.11.0)
     newrelic_rpm (6.1.0.352)
-    nio4r (2.3.1)
+    nio4r (2.5.8)
     nokogiri (1.9.1)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
@@ -158,7 +158,7 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.8)
       pry (>= 0.10.4)
-    puma (5.6.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     pundit (2.0.0)
       activesupport (>= 3.0.0)
